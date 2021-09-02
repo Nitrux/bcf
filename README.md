@@ -6,7 +6,7 @@
 
 Having this script:
 
-```
+```shell
 #! /bin/bash
 
 source bcf
@@ -27,7 +27,7 @@ printf '  - %s\n' "${todo_list[@]}"
 
 And this configuration file at `~/.oblivion_aid`:
 
-```
+```shell
 # Comments work as usual.
 
 name "Luis Lavaire"
@@ -47,7 +47,7 @@ shopping_list eggs
 
 You'll get as output:
 
-```
+```shell
 Name: Luis Lavaire.
 
 Groceries:
