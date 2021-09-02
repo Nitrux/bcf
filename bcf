@@ -1,0 +1,17 @@
+#! /bin/bash
+
+
+#   Build functions that define an array named as the function (i.e.,
+#   function 'foo' sets the variable 'foo').
+
+def () {
+    for __ in "$@"; do
+        2> /dev/null export -f "$__" && { echo "Group '$__' already defined."; continue; }
+        eval "$__ () { $_+=( \"\${@}\" ); CURRENT_GROUP=$__; }"
+    done
+}
+
+
+#   CURRENT_GROUP tells ',' which group to append content to.
+
+, () { "$CURRENT_GROUP" "$@"; }
