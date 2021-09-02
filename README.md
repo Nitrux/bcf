@@ -76,7 +76,7 @@ function!).
   However, most of the time you'll want `,` to fill those arrays
   for you...
 
-- `,` appends its arguments to the content of the most-recently
+- `,` appends its arguments to the array of the most-recently
   used group.
 
 The purpose of `bcf` is to give the user a simple syntax for
