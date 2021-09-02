@@ -47,7 +47,7 @@ shopping_list eggs
 
 You'll get as output:
 
-```shell
+```
 Name: Luis Lavaire.
 
 Groceries:
@@ -66,8 +66,8 @@ Things to do:
 
 ##
 
-`bcf` is just two commands: `def` and `,` (Yes, `,` is a
-command!).
+`bcf` is just two functions: `def` and `,` (yes, `,` is a
+function!).
 
 - `def` builds a handler for a new group. A group is comprised
   of a function and an array, both have the same name, e.g:
