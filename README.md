@@ -84,3 +84,8 @@ configuring `bash` applications while relieving the programmer
 from the task of parsing files (great fun to do it in shell! :))
 or exposing the user to configuring their application directly
 with variables or arrays. That's it!
+
+## FAQs
+
+- _This is too simple, I could just use plain shell instead!_ Go ahead.
+- _I don't like the comma. I want something else._ Here you go: `- () { , "$@"; }`.
