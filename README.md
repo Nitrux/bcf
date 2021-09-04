@@ -1,6 +1,6 @@
 # bcf
 
-> Simple configuration file format that runs on top of bash.
+> _Simple configuration file format that runs on top of bash._
 
 ## Usage.
 
