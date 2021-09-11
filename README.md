@@ -16,8 +16,8 @@ todo_list "Buy groceries for breakfast."
 ```
 
 From your script:
-- `source bcf`.
-- Define your groups with `def <group [groups]>`.
+- `source bcf [groups]`, or define your groups with `def <group [groups]>`
+  after sourcing `bcf`.
 - `source` your configuration file.
 
 
