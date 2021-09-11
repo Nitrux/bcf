@@ -4,83 +4,36 @@
 
 ## Usage.
 
-Having this script:
-
 ```shell
-#! /bin/bash
-
-source bcf
-def name shopping_list todo_list
-
-source ~/.oblivion_aid
-
-echo Name: "${name}."
-
-echo
-echo Groceries:
-printf '  - %s\n' "${shopping_list[@]}"
-
-echo
-echo Things to do:
-printf '  - %s\n' "${todo_list[@]}"
-```
-
-And this configuration file at `~/.oblivion_aid`:
-
-```shell
-# Comments work as usual.
-
-name "Luis Lavaire"
+#   Comments work as usual.
+#   This will build an array called `todo_list`.
 
 todo_list "Buy groceries for breakfast."
         , "Meet my friend for breakfast."
         , "Publish bcf."
         , "Travel to Milan."
         , "Don't forget to come back."
-
-shopping_list eggs
-            , milk
-            , bacon
-            , ham
-            , bagels  # Someone will have a yummy breakfast! :)
 ```
 
-You'll get as output:
+From your script:
+- `source bcf`.
+- Define your groups with `def <group [groups]>`.
+- `source` your configuration file.
 
-```
-Name: Luis Lavaire.
 
-Groceries:
-  - eggs
-  - milk
-  - bacon
-  - ham
-  - bagels
+## Desgin.
 
-Things to do:
-  - Meet my friend for breakfast.
-  - Publish bcf.
-  - Travel to Milan.
-  - Don't forget to come back.
-```
+`bcf` is just two functions: `def` and `,` (yes, `,` is a function!).
 
-##
+- `def <group> [args]` builds a function that appends it's arguments to
+  the array `<group>`.
+- `,` appends its arguments to the array of the most-recently used group.
 
-`bcf` is just two functions: `def` and `,` (yes, `,` is a
-function!).
 
-- `def` builds a handler for a new group. A group is comprised
-  of a function and an array, both have the same name, e.g:
-  `def x` creates both a function and an array called `x`. The
-  function, when called, appends its arguments to the array.
-  However, most of the time you'll want `,` to fill those arrays
-  for you...
+## Why.
 
-- `,` appends its arguments to the content of the most-recently
-  used group.
-
-The purpose of `bcf` is to give the user a simple syntax for
-configuring `bash` applications while relieving the programmer
-from the task of parsing files (great fun to do it in shell! :))
-or exposing the user to configuring their application directly
-with variables or arrays. That's it!
+- To relieve the programmer from the task of parsing files (great fun
+  to do it in shell! :))
+- To avoid exposing the user to configuring a script with mere shell
+  variables or arrays.
+- `\` at end of line is ugly. :)
