@@ -6,7 +6,8 @@
 
 ```shell
 #   Comments work as usual.
-#   This will build an array called `todo_list`.
+#   This will build an both a function and an array called
+#   `todo_list` (a group).
 
 todo_list "Buy groceries for breakfast."
         , "Meet my friend for breakfast."
