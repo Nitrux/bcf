@@ -7,7 +7,7 @@
 ```shell
 #   Comments work as usual.
 #   This will build an both a function and an array called
-#   `todo_list` (a group).
+#   `todo_list` (that pair comprises a group).
 
 todo_list "Buy groceries for breakfast."
         , "Meet my friend for breakfast."
@@ -37,4 +37,4 @@ From your script:
   to do it in shell! :))
 - To avoid exposing the user to configuring a script with mere shell
   variables or arrays.
-- `\` at end of line is ugly. :)
+- `\` on line ends is ugly (it's a hassle to align it). :)

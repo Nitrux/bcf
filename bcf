@@ -10,8 +10,3 @@ def () { for K; do eval "$K () { $K+=( \"\$@\" ); bcf_CURRENT_GROUP=$K; }"; done
 #   bcf_CURRENT_GROUP tells ',' which array to append content to.
 
 , () { "$bcf_CURRENT_GROUP" "$@"; }
-
-
-#   The groups may be passed from the command-line.
-
-def "$@"
