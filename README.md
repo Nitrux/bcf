@@ -17,12 +17,10 @@ todo_list "Buy groceries for breakfast."
 ```
 
 From your script:
-- `source bcf [groups]`, or define your groups with `def <group [groups]>`
-  after sourcing `bcf`.
-- `source` your configuration file.
+- `source bcf; def [groups]; source <config-file>`.
 
 
-## Desgin.
+## Design.
 
 `bcf` is just two functions: `def` and `,` (yes, `,` is a function!).
 
