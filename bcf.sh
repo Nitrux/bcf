@@ -1,6 +1,3 @@
-#! /bin/bash
-
-
 #   Build functions that define an array named as the function (i.e.,
 #   function 'foo' defines the array 'foo').
 
