@@ -1,2 +1,2 @@
-def () { for K; do eval "$K () { $K+=( \"\$@\" ); bcf_CURRENT_GROUP=$K; }"; done; }
-, () { "$bcf_CURRENT_GROUP" "$@"; }
+def () { local K; for K; do eval "$K () { $K+=( \"\$@\" ); __bcf_G__='$K'; }"; done; }
+  , () { "$__bcf_G__" "$@"; }
