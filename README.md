@@ -35,4 +35,4 @@ From your script:
   to do it in shell! :))
 - To avoid exposing the user to configuring a script with mere shell
   variables or arrays.
-- `\` on line ends is ugly (it's a hassle to align it). :)
+- `\` on line ends is ugly (it's a hassle to align them). :)
